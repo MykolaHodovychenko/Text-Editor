@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="stackPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.GeneralController">
+<children>
+    <VBox prefHeight="200.0" prefWidth="100.0">
+        <children>
+            <MenuBar>
+                <menus>
+                    <Menu mnemonicParsing="false" text="Файл">
+                        <items>
+                            <MenuItem fx:id="create" mnemonicParsing="false" text="Создать" />
+                            <MenuItem fx:id="open" mnemonicParsing="false" text="Открыть..." />
+                            <MenuItem fx:id="save" mnemonicParsing="false" text="Сохранить" />
+                            <MenuItem fx:id="saveAs" mnemonicParsing="false" text="Сохранить как..." />
+                            <SeparatorMenuItem mnemonicParsing="false" />
+                            <MenuItem fx:id="exit" mnemonicParsing="false" text="Выход" />
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Правка">
+                        <items>
+                            <MenuItem fx:id="undo" mnemonicParsing="false" text="Отменить" />
+                            <SeparatorMenuItem mnemonicParsing="false" />
+                            <MenuItem fx:id="cut" mnemonicParsing="false" text="Вырезать" />
+                            <MenuItem fx:id="copy" mnemonicParsing="false" text="Копировать" />
+                            <MenuItem fx:id="paste" mnemonicParsing="false" text="Вставить" />
+                            <MenuItem fx:id="delete" mnemonicParsing="false" text="Удалить" />
+                            <SeparatorMenuItem mnemonicParsing="false" />
+                            <MenuItem fx:id="find" mnemonicParsing="false" text="Найти" />
+                            <MenuItem fx:id="change" mnemonicParsing="false" text="Заменить" />
+                            <SeparatorMenuItem mnemonicParsing="false" />
+                            <MenuItem fx:id="selectAll" mnemonicParsing="false" text="Выделить всё" />
+                            <MenuItem fx:id="time" mnemonicParsing="false" text="Время и дата" />
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Формат">
+                        <items>
+                            <CheckMenuItem fx:id="nextLine" mnemonicParsing="false" text="Перенос по словам" />
+                            <MenuItem fx:id="font" mnemonicParsing="false" text="Шрифт..." />
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Вид">
+                        <items>
+                            <MenuItem mnemonicParsing="false" text="Строка состояния" />
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Справка">
+                        <items>
+                            <MenuItem fx:id="about" mnemonicParsing="false" text="О программе" />
+                        </items>
+                    </Menu>
+                </menus>
+            </MenuBar>
+            <TextArea fx:id="text" prefHeight="375.0" prefWidth="634.0" />
+        </children>
+    </VBox>
+</children>
+</StackPane>
